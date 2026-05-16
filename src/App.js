@@ -5,6 +5,8 @@ import Login from './pages/Login';
 import Courses from './pages/Courses';
 import CourseDetail from './pages/CourseDetail';
 import StudentDashboard from './pages/StudentDashboard';
+import Payment from './pages/Payment';
+import AdminDashboard from './pages/AdminDashboard';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:id" element={<CourseDetail />} />
         <Route path="/dashboard" element={<StudentDashboard />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
     </Router>
   );
